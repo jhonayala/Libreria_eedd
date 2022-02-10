@@ -41,17 +41,32 @@ public class Libreria {
 		btnEstan_Matematicas.setFont(new Font("Tahoma", Font.PLAIN, 20));
 		btnEstan_Matematicas.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				frame.dispose();
+				new VisEstanteria("Matematicas");
 			}
 		});
 		btnEstan_Matematicas.setBounds(113, 207, 147, 45);
 		frame.getContentPane().add(btnEstan_Matematicas);
 		
 		JButton btnEstan_Idiomas = new JButton("Idiomas");
+		btnEstan_Idiomas.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+				frame.dispose();
+				new VisEstanteria("Idiomas");
+			}
+		});
 		btnEstan_Idiomas.setFont(new Font("Tahoma", Font.PLAIN, 20));
 		btnEstan_Idiomas.setBounds(342, 347, 147, 45);
 		frame.getContentPane().add(btnEstan_Idiomas);
 		
 		JButton btnEstan_Historia = new JButton("Historia");
+		btnEstan_Historia.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				frame.dispose();
+				new VisEstanteria("Historia");
+			}
+		});
 		btnEstan_Historia.setFont(new Font("Tahoma", Font.PLAIN, 20));
 		btnEstan_Historia.setBounds(546, 207, 147, 45);
 		frame.getContentPane().add(btnEstan_Historia);

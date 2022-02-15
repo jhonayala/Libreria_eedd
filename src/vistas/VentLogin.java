@@ -19,6 +19,7 @@ public class VentLogin {
 	private JFrame frame;
 	private JTextField textField;
 	private JPasswordField passwordField;
+	private JButton btnLogin;
 
 
 	/**
@@ -65,7 +66,7 @@ public class VentLogin {
 		lblInContraseña.setBounds(140, 129, 91, 13);
 		frame.getContentPane().add(lblInContraseña);
 		
-		JButton btnLogin = new JButton("Login");
+		btnLogin = new JButton("Login");
 		btnLogin.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				String ContSam = new String(passwordField.getPassword());
@@ -79,5 +80,6 @@ public class VentLogin {
 		});
 		btnLogin.setBounds(146, 202, 85, 21);
 		frame.getContentPane().add(btnLogin);
+		frame.getRootPane().setDefaultButton(btnLogin);
 	}
 }

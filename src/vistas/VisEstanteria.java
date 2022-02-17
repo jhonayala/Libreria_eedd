@@ -1,6 +1,6 @@
 package vistas;
 
-import java.awt.EventQueue;
+
 
 import javax.swing.JFrame;
 
